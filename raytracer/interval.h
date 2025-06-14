@@ -17,7 +17,7 @@ public:
 
 	bool contains(double x) const
 	{
-		return min <= x <= max;
+		return min <= x && x <= max;
 	}
 
 	bool surrounds(double x) const

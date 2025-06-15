@@ -34,7 +34,7 @@ int main()
 				else if (choose_mat < 0.95)
 				{
 					// metal
-					auto albedo = color::random() * color::random();
+					auto albedo = color::random(0.5, 1.0);
 					auto fuzz = random_double(0.0, 0.5);
 					sphere_material = make_shared<metal>(albedo, fuzz);
 					world.add(make_shared<sphere>(center, 0.2, sphere_material));

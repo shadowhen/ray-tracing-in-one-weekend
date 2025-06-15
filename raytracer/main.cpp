@@ -73,6 +73,8 @@ int main()
 	cam.defocus_angle = 0.6;
 	cam.focus_dist = 10.0;
 
+	cam.enable_parallel = true;
+
 	cam.render(world);
 
 	return 0;
